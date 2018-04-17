@@ -15,17 +15,15 @@
 
  var myWidget = {
         events: {
-           onXXX: function() {
+           onLoad: function() {
                alert('onXXX callback');           
            }, 
-           onYYY: function () {
-               alert('onXXX callback');
-           },
+          
            
         }
      };
-     widget.addEvent('onXXX',myWidget.events.onXXX);
-     widget.addEvent('onYYY',myWidget.events.onYYY);
+     widget.addEvent('onLoad',myWidget.events.onLoad);
+    // widget.addEvent('onYYY',myWidget.events.onYYY);
 
 </script>
 <title>Sample Widget</title>
