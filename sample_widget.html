@@ -135,14 +135,7 @@
   }
 }
 
-function findWeatherDetails() {
-  if (searchInput.value === "") {
-  
-  }else {
-    let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&appid="+appKey;
-   httpRequestAsync(searchLink, theResponse);
-  }
- }
+
           
         function func1() {
  let searchButton = document.getElementById("search-btn");
@@ -156,7 +149,14 @@ searchInput.addEventListener("keyup", enterPressed);
 
 
 }
-      
+      function findWeatherDetails() {
+  if (searchInput.value === "") {
+  
+  }else {
+    let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&appid="+appKey;
+   httpRequestAsync(searchLink, theResponse);
+  }
+ }
 
 function theResponse(response) {
   let jsonObject = JSON.parse(response);
