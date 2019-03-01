@@ -125,8 +125,7 @@
     	<!-- Application Metas End -->
     	    	<script type="text/javascript" src="UWA_Standalone_Alone.js"></script>
         <script type="text/javascript">
-        function func1() {
-  const appKey = "f24f40b1c24505685fce3b8acd0fcffc";
+             const appKey = "f24f40b1c24505685fce3b8acd0fcffc";
 
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
@@ -134,9 +133,12 @@ let cityName = document.getElementById("city-name");
 let icon = document.getElementById("icon");
 let temperature = document.getElementById("temp");
 let humidity = document.getElementById("humidity-div");
-
-searchButton.addEventListener("click", findWeatherDetails);
+            searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
+
+        function func1() {
+ 
+
 
 }
                 function enterPressed(event) {
